@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import sportfusionImage from "./sportfusion.png";
+
 import "./navbar.css";
 
 function Navbar() {
@@ -13,12 +15,15 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3>LOGO</h3>
+			{/* <img id="logo" src={sportfusionImage} alt="SportFusion Logo" /> */}
+			<h3>
+			Sportfusion
+			</h3>
 			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">My work</a>
-				<a href="/#">Blog</a>
-				<a href="/#">About me</a>
+				<a href="/#">Fotboll</a>
+				<a href="/#">Innebandy</a>
+				<a href="/#">Ishockey</a>
+				<a href="/#">About us</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
@@ -30,6 +35,8 @@ function Navbar() {
 				onClick={showNavbar}>
 				<FaBars />
 			</button>
+			
+		
 		</header>
 	);
 }
