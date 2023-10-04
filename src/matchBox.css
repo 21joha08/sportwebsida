@@ -1,0 +1,15 @@
+#main-container {
+  width: 400px;
+}
+
+.team-logo {
+  height: 150px;
+}
+
+.logo-img {
+  height: 140px;
+}
+
+.date {
+  font-weight: bold;
+}

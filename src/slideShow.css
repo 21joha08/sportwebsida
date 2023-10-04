@@ -1,0 +1,20 @@
+.item {
+  list-style: none;
+}
+
+#carousel {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+/* slideShow.css */
+.carousel-indicators .item {
+  list-style: none;
+  background-color: #888; /* Default color for inactive indicators */
+  margin: 0 5px; /* Adjust the spacing between indicators */
+  cursor: pointer; /* Add cursor pointer for clickable effect */
+}
+
+.carousel-indicators .active {
+  background-color: #f8f9fa; /* Color for active indicator */
+}
