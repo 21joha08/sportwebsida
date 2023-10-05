@@ -1,14 +1,15 @@
 import "./App.css";
 import Navbar from "./navbar";
 import MatchBox from "./MatchBox";
-import Slideshow from "./Slideshow";
+import HomePage from "./Home/HomePage";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Slideshow />
+      <HomePage />
       <MatchBox />
+      
     </div>
   );
 }

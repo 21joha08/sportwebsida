@@ -13,12 +13,14 @@ function Navbar() {
   return (
     <header>
       {/* <img id="logo" src={sportfusionImage} alt="SportFusion Logo" /> */}
-      <h3>Sportfusion</h3>
+      <button id="home-logo" onClick={ () => { 
+        window.location.reload();
+      }}><h3 a href="./App.js">Sportfusion</h3></button>
       <nav ref={navRef}>
-        <a href="/#">Fotboll</a>
-        <a href="/#">Innebandy</a>
-        <a href="/#">Ishockey</a>
-        <a href="/#">About us</a>
+        <a href="/#" className="sport">Fotboll</a>
+        <a href="/#" className="sport">Innebandy</a>
+        <a href="/#" className="sport">Ishockey</a>
+        <a href="/#" className="sport">About us</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
@@ -29,5 +31,7 @@ function Navbar() {
     </header>
   );
 }
+
+
 
 export default Navbar;
