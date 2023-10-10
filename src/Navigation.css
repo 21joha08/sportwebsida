@@ -1,0 +1,57 @@
+:root {
+	--mainColor: #192965;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #c6c44d;
+	--textColor: #eee;
+}
+
+.navbg {
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+.navtext {
+    color: var(--textColor);
+}
+
+.navtext:hover {
+    color: var(--secondaryColor);
+}
+
+.logo {
+    color: var(--secondaryColor);
+    padding-right: 1rem;
+}
+.logo:visited {
+  color: var(--secondaryColor);
+}
+
+#basic-nav-dropdown {
+    color: var(--textColor);
+    padding-left: 4rem;
+   
+}
+
+#basic-nav-dropdown:hover {
+    color: var(--secondaryColor);
+}
+
+.drop {
+    background-color: var(--mainColorLight);
+    
+}
+
+.drop:hover {
+    background-color: var(--mainColor);
+
+}
+
+.navbg {
+    margin-bottom: 5px;
+}
+
+.ham {
+    color: var(--mainColor);
+    background-color: var(--secondaryColor);
+}
+

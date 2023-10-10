@@ -13,10 +13,10 @@ function MatchBox() {
           <div className="date col-12">12-12-2009 15.00</div>
         </div>
         <div className="row">
-          <div className="team-logo col-6 text-center m-0 p-0">
-            <img className="logo-img" src={gala} alt="logo"></img>
+          <div className="team-logo col-6">
+            <img className="logo-img" src={united} alt="logo"></img>
           </div>
-          <div className="team-logo col-6 text-center m-0 p-0">
+          <div className="team-logo col-6">
             <img className="logo-img" src={united} alt="logo"></img>
           </div>
         </div>
@@ -39,10 +39,10 @@ function MatchBox() {
           <div className="date col-12">12-12-2009 15.00</div>
         </div>
         <div className="row">
-          <div className="team-logo col-6 text-center m-0 p-0">
+          <div className="team-logo col-6 ">
             <img className="logo-img" src={gala} alt="logo"></img>
           </div>
-          <div className="team-logo col-6 text-center m-0 p-0">
+          <div className="team-logo col-6">
             <img className="logo-img" src={united} alt="logo"></img>
           </div>
         </div>
@@ -64,10 +64,10 @@ function MatchBox() {
           <div className="date col-12">12-12-2009 15.00</div>
         </div>
         <div className="row">
-          <div className="team-logo col-6 text-center m-0 p-0">
+          <div className="team-logo col-6">
             <img className="logo-img" src={gala} alt="logo"></img>
           </div>
-          <div className="team-logo col-6 text-center m-0 p-0">
+          <div className="team-logo col-6">
             <img className="logo-img" src={united} alt="logo"></img>
           </div>
         </div>

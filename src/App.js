@@ -1,16 +1,21 @@
 import "./App.css";
-import Navbar from "./navbar";
-import MatchBox from "./MatchBox";
+import Navigation from "./Navigation";
 import HomePage from "./Home/HomePage";
+import { BrowserRouter as Router, Routes, Route, Switch } from "react-router-dom";
+import Allsvenskan from "./Pages/Allsvenskan";
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <HomePage />
-      <MatchBox />
-      
-    </div>
+    <>
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route exact path="/" element={<HomePage />}/>
+        <Route path="/allsvenskan" element={<Allsvenskan />}/>
+      </Routes>
+    </Router>
+    </>
   );
 }
 
