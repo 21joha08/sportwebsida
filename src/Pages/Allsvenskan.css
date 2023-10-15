@@ -1,0 +1,17 @@
+.centered-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Horizontal alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+ 
+  .logo-list {
+    margin: 0 15px; /* 35px/2 on each side for a total of 35px space between images */
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    width: 95px;
+  }
