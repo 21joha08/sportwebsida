@@ -1,17 +1,18 @@
-.centered-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row; /* Horizontal alignment */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
- 
-  .logo-list {
-    margin: 0 15px; /* 35px/2 on each side for a total of 35px space between images */
-    margin-bottom: 10px;
-  }
+.logo-list {
+  margin: 0 15px; /* 35px/2 on each side for a total of 35px space between images */
+  margin-bottom: 10px;
+}
 
-  .image-container {
-    width: 95px;
-  }
+.container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  width: 95px;
+  margin-right: 10px; /* Add some margin to separate the containers */
+}
+
+.events-container {
+  flex: 1; /* Allow the events container to grow and take up the available space */
+}

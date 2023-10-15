@@ -2,32 +2,50 @@ import React from "react";
 import "./matchBox.css";
 import gala from "./gala.png";
 import united from "./united.png";
-function MatchBox() {
+
+function MatchBox({ event }) {
+  // Convert the "startDate" to a JavaScript Date object
+  const startDate = new Date(event.startDate);
+  // Format the date as desired (you can use a library like moment.js for more advanced formatting)
+  const formattedDate =
+    startDate.toLocaleDateString() + " " + startDate.toLocaleTimeString();
+  console.log(event);
   return (
-      <div
-        className="container border border-success mt-4 col-6"
-        id="main-container">
-        <div className="row">
-          <div className="date col-12">12-12-2009 15.00</div>
+    <div
+      className="container border border-success mb-3 col-6"
+      id="main-container"
+    >
+      <div className="row">
+        <div className="date col-12">{formattedDate}</div>
+      </div>
+      <div className="row">
+        <div className="team-logo col-6">
+          <img
+            className="logo-img"
+            src={event.homeTeam.logo}
+            alt={event.homeTeam.name}
+          />
         </div>
-        <div className="row">
-          <div className="team-logo col-6">
-            <img className="logo-img" src={united} alt="logo"></img>
-          </div>
-          <div className="team-logo col-6">
-            <img className="logo-img" src={united} alt="logo"></img>
-          </div>
-        </div>
-        <div className="row">
-          <div className="score col-12">
-            <p>Resultat:</p>
-            <h1>3 - 2</h1>
-          </div>
-        </div>
-        <div className="row">
-          <div className="arena col-12">en bra arena</div>
+        <div className="team-logo col-6">
+          <img
+            className="logo-img"
+            src={event.visitingTeam.logo}
+            alt={event.visitingTeam.name}
+          />
         </div>
       </div>
+      <div className="row">
+        <div className="score col-12">
+          <p>Resultat:</p>
+          <h1>
+            {event.homeTeamScore} - {event.visitingTeamScore}
+          </h1>
+        </div>
+      </div>
+      <div className="row">
+        <div className="arena col-12">{event.homeTeam.arena.name}</div>
+      </div>
+    </div>
   );
 }
 
