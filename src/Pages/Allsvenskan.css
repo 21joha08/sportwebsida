@@ -3,14 +3,9 @@
   margin-bottom: 10px;
 }
 
-.container-fluid {
-  display: flex;
-  align-items: center;
-}
-
 .image-container {
+  margin-top: 45px;
   width: 95px;
-  margin-right: 10px; /* Add some margin to separate the containers */
 }
 
 .events-container {

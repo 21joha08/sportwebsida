@@ -1,5 +1,5 @@
 #main-container {
-  width: 350px;
+  width: 300px;
 }
 
 .team-logo {
@@ -7,14 +7,19 @@
 }
 
 .logo-img {
-  height: 150px;
+  height: 100px;
   margin-top: 10px;
 }
 
 .date {
   font-weight: bold;
+  font-size: small;
 }
 
+.arena {
+  font-weight: lighter;
+  font-size: small;
+}
 .col-12 {
   text-align: center;
   margin: 0;
