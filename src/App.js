@@ -8,6 +8,7 @@ import {
   Switch,
 } from "react-router-dom";
 import Allsvenskan from "./Pages/Allsvenskan";
+import TeamEvents from "./Pages/TeamEvents.js";
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/allsvenskan" element={<Allsvenskan />} />
+          <Route path="/team/:id" component={TeamEvents} />
         </Routes>
       </Router>
     </>

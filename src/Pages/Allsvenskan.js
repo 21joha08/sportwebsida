@@ -3,6 +3,7 @@ import "../Service/AllsvenskanAPI.js";
 import "./Allsvenskan.css";
 import MatchBox from "../MatchBox.js";
 import useFetch from "../Service/AllsvenskanAPI.js";
+import { Link } from "react-router-dom";
 
 function Allsvenskan() {
   const [logos] = useFetch("teams", "");
@@ -17,7 +18,13 @@ function Allsvenskan() {
         <div className="image-container border border-primary border-3">
           {logos.map((team, index) => (
             <div key={team.id} className="logo-list text-center">
-              <img src={team.logos.small} alt={team.name} />
+              <Link to={`/team/${team.id}`}>
+                <img
+                  src={team.logos.small}
+                  alt={team.name}
+                  id={`team-logo-${team.id}`}
+                />
+              </Link>
             </div>
           ))}
         </div>
