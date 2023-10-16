@@ -9,10 +9,10 @@ function MatchBox({ event }) {
   // Format the date as desired (you can use a library like moment.js for more advanced formatting)
   const formattedDate =
     startDate.toLocaleDateString() + " " + startDate.toLocaleTimeString();
-  console.log(event);
+
   return (
     <div
-      className="container border border-success mb-3 col-6"
+      className="container border border-black mb-3 col-6"
       id="main-container"
     >
       <div className="row">
