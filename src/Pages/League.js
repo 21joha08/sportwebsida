@@ -19,15 +19,22 @@ function League({ leagueName }) {
   const [logos] = useFetch(leagueId + "/", "teams", "");
   const [events] = useFetch(leagueId + "/", "events", "&limit=100");
   const [selectedTeamId, setSelectedTeamId] = useState(null); // State to store selected team ID
-
+  const [selectedTeamName, setSelectedTeamName] = useState(null);
   // Function to handle the image click and update the selected team
   const handleImageClick = (teamId) => {
     // If the selected team is the same as the one clicked, reset it
     if (selectedTeamId === teamId) {
       setSelectedTeamId(null);
+      setSelectedTeamName(null); // Reset the selected team name
     } else {
       // Otherwise, select the clicked team
       setSelectedTeamId(teamId);
+
+      // Get and set the selected team's name
+      const selectedTeam = logos.find((team) => team.id === teamId);
+      if (selectedTeam) {
+        setSelectedTeamName(selectedTeam.name + "'s");
+      }
     }
   };
 
@@ -43,12 +50,14 @@ function League({ leagueName }) {
   // Use useEffect to reset selectedTeamId when leagueId changes or component mounts
   useEffect(() => {
     setSelectedTeamId(null);
+    setSelectedTeamName(null);
   }, [leagueId]);
 
   return (
     <div className="container">
       <div className="row">
         <div className="col-2">
+          <h5>{leagueName}</h5>
           <div className="image-container">
             {logos.map((team, index) => (
               <div key={team.id} className="logo-list text-center">
@@ -63,7 +72,7 @@ function League({ leagueName }) {
           </div>
         </div>
         <div className="col-10 text-center">
-          <h1>{leagueName} Teams</h1>
+          <h2>{selectedTeamName} Matcher:</h2>
           <div className="row event-container">
             {filteredEvents.map((event) => (
               <MatchBox key={event.id} event={event} />
