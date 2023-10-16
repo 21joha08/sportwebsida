@@ -52,8 +52,9 @@ function League({ leagueName }) {
           <div className="image-container">
             {logos.map((team, index) => (
               <div key={team.id} className="logo-list text-center">
-                <img id="logga"
-                  src={team.logos.small}
+                <img
+                  id="logga"
+                  src={team.logo}
                   alt={team.name}
                   onClick={() => handleImageClick(team.id)}
                 />

@@ -8,6 +8,9 @@
   width: 95px;
 }
 
+#logga {
+  height: 55px;
+}
 .events-container {
   flex: 1; /* Allow the events container to grow and take up the available space */
 }
