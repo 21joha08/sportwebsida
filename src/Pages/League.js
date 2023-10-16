@@ -1,13 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Service/AllsvenskanAPI.js";
-import "./Allsvenskan.css";
+import "../Service/LeagueAPI.js";
+import "./League.css";
 import MatchBox from "../MatchBox.js";
-import useFetch from "../Service/AllsvenskanAPI.js";
+import useFetch from "../Service/LeagueAPI.js";
 
-function Allsvenskan() {
-  const [logos] = useFetch("teams", "");
-  const [events] = useFetch("events", "&limit=100");
+function League({ leagueName }) {
+  const leagueIds = [
+    {
+      Allsvenskan: "124439",
+      Superettan: "119513",
+      Damallsvenskan: "123935",
+      Superligan: "121413",
+      SHL: "108487",
+    },
+  ];
+
+  const leagueId = leagueIds[0][leagueName];
+  console.log(leagueId);
+
+  const [logos] = useFetch(leagueId + "/", "teams", "");
+  const [events] = useFetch(leagueId + "/", "events", "&limit=100");
   const [selectedTeamId, setSelectedTeamId] = useState(null); // State to store selected team ID
 
   // Function to handle the image click and update the selected team
@@ -53,4 +66,4 @@ function Allsvenskan() {
   );
 }
 
-export default Allsvenskan;
+export default League;
