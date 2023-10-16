@@ -1,22 +1,19 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "../Service/LeagueAPI.js";
 import "./League.css";
 import MatchBox from "../MatchBox.js";
 import useFetch from "../Service/LeagueAPI.js";
 
 function League({ leagueName }) {
-  const leagueIds = [
-    {
-      Allsvenskan: "124439",
-      Superettan: "119513",
-      Damallsvenskan: "123935",
-      Superligan: "121413",
-      SHL: "108487",
-    },
-  ];
+  const leagueIds = {
+    Allsvenskan: "124439",
+    Superettan: "119513",
+    Damallsvenskan: "123935",
+    Superligan: "121413",
+    SHL: "108487",
+  };
 
-  const leagueId = leagueIds[0][leagueName];
+  const leagueId = leagueIds[leagueName];
   console.log(leagueId);
 
   const [logos] = useFetch(leagueId + "/", "teams", "");
@@ -25,7 +22,13 @@ function League({ leagueName }) {
 
   // Function to handle the image click and update the selected team
   const handleImageClick = (teamId) => {
-    setSelectedTeamId(teamId);
+    // If the selected team is the same as the one clicked, reset it
+    if (selectedTeamId === teamId) {
+      setSelectedTeamId(null);
+    } else {
+      // Otherwise, select the clicked team
+      setSelectedTeamId(teamId);
+    }
   };
 
   // Filter events based on the selected team ID
@@ -36,6 +39,11 @@ function League({ leagueName }) {
           event.visitingTeam.id === selectedTeamId
       )
     : events;
+
+  // Use useEffect to reset selectedTeamId when leagueId changes or component mounts
+  useEffect(() => {
+    setSelectedTeamId(null);
+  }, [leagueId]);
 
   return (
     <div className="container">
@@ -54,7 +62,7 @@ function League({ leagueName }) {
           </div>
         </div>
         <div className="col-10 text-center">
-          <h1>Allsvenskan Teams</h1>
+          <h1>{leagueName} Teams</h1>
           <div className="row event-container">
             {filteredEvents.map((event) => (
               <MatchBox key={event.id} event={event} />
