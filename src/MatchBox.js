@@ -43,7 +43,7 @@ function MatchBox({ event }) {
         </div>
       </div>
       <div className="row">
-        <div className="arena col-12">{event.homeTeam.arena.name}</div>
+        <div className="arena col-12">{event.facts.arena.name}</div>
       </div>
     </div>
   );
