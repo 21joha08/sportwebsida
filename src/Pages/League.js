@@ -17,7 +17,11 @@ function League({ leagueName }) {
   console.log(leagueId);
 
   const [logos] = useFetch(leagueId + "/", "teams", "");
-  const [events] = useFetch(leagueId + "/", "events", "&limit=100");
+  const [events] = useFetch(
+    leagueId + "/",
+    "events",
+    "&limit=100&sort=startDate%3Adesc"
+  );
   const [selectedTeamId, setSelectedTeamId] = useState(null); // State to store selected team ID
   const [selectedTeamName, setSelectedTeamName] = useState(null);
   // Function to handle the image click and update the selected team
@@ -56,9 +60,9 @@ function League({ leagueName }) {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-2">
-          <h5>{leagueName}</h5>
-          <div className="image-container">
+        <div className="col-2 ">
+          <div className="image-container d-flex flex-column align-items-center">
+            <h5 className="rubrik">{leagueName}</h5>
             {logos.map((team, index) => (
               <div key={team.id} className="logo-list text-center">
                 <img

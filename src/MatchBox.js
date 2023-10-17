@@ -10,12 +10,16 @@ function MatchBox({ event }) {
   const formattedDate =
     startDate.toLocaleDateString() + " " + startDate.toLocaleTimeString();
 
+  let arenaName = "Arena saknas";
+  if (event.facts != null) {
+    arenaName = event.facts.arena.name;
+  }
   return (
     <div
       className="container border border-black mb-3 col-6"
       id="main-container"
     >
-      <div className="row">
+      <div className="row row-team-logo">
         <div className="date col-12">{formattedDate}</div>
       </div>
       <div className="row">
@@ -43,7 +47,7 @@ function MatchBox({ event }) {
         </div>
       </div>
       <div className="row">
-        <div className="arena col-12">{event.facts.arena.name}</div>
+        <div className="arena col-12">{arenaName}</div>
       </div>
     </div>
   );

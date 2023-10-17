@@ -2,14 +2,22 @@
   width: 300px;
 }
 
+.row-team-logo {
+  display: flex;
+  justify-content: center;
+}
 .team-logo {
   height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .logo-img {
-  height: 100px;
+  width: 100px;
   margin-top: 10px;
 }
+
 
 .date {
   font-weight: bold;

@@ -1,16 +1,16 @@
 .logo-list {
-  margin: 0 15px; /* 35px/2 on each side for a total of 35px space between images */
-  margin-bottom: 10px;
+  margin-bottom: 5px; /* Reduce the margin for .logo-list */
 }
 
 .image-container {
-  margin-top: 45px;
-  width: 95px;
+  margin: 2px; /* Adjust the margin-top for image-container */
+  
 }
 
 #logga {
-  height: 55px;
+  width: 55px;
 }
+
 .events-container {
   flex: 1; /* Allow the events container to grow and take up the available space */
 }
@@ -19,4 +19,13 @@
   cursor: pointer;
   background-color: grey;
   border-radius: 5px;
+}
+
+.liga {
+  display: flex;
+  justify-content: center;
+}
+
+.rubrik{
+  margin-bottom: 20px;
 }
