@@ -4,7 +4,6 @@
 
 .image-container {
   margin: 2px; /* Adjust the margin-top for image-container */
-  
 }
 
 #logga {
@@ -26,6 +25,6 @@
   justify-content: center;
 }
 
-.rubrik{
+.rubrik {
   margin-bottom: 20px;
 }
