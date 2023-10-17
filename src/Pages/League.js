@@ -75,9 +75,9 @@ function League({ leagueName }) {
             ))}
           </div>
         </div>
-        <div className="col-10 text-center">
+        <div className="event-container col-8 text-center">
           <h2>{selectedTeamName} Matcher:</h2>
-          <div className="row event-container">
+          <div className="row">
             {filteredEvents.map((event) => (
               <MatchBox key={event.id} event={event} />
             ))}

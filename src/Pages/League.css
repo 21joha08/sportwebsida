@@ -16,8 +16,7 @@
 
 #logga:hover {
   cursor: pointer;
-  background-color: grey;
-  border-radius: 5px;
+  width: 60px;
 }
 
 .liga {

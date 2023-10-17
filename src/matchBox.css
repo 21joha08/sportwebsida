@@ -1,5 +1,5 @@
 #main-container {
-  width: 300px;
+  width: 200px;
 }
 
 .row-team-logo {
@@ -7,17 +7,16 @@
   justify-content: center;
 }
 .team-logo {
-  height: 150px;
+  height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .logo-img {
-  width: 100px;
+  width: 70px;
   margin-top: 10px;
 }
-
 
 .date {
   font-weight: bold;
