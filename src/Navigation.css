@@ -48,6 +48,9 @@
 
 .navbg {
     margin-bottom: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .ham {

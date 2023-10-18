@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import HomePage from "./Home/HomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import League from "./Pages/League";
+import Foooter from "./navigation/Foooter";
 
 function App() {
   const allSvenskan = "Allsvenskan";
@@ -35,6 +36,7 @@ function App() {
           />
           <Route path="/SHL" element={<League leagueName={SHL} />} />
         </Routes>
+        <Foooter />
       </Router>
     </>
   );

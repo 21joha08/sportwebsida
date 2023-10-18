@@ -58,11 +58,11 @@ function League({ leagueName }) {
   }, [leagueId]);
 
   return (
-    <div className="container">
-      <div className="row">
+    <div className="box">
+      <div className="row tot">
         <div className="col-2 ">
           <div className="image-container d-flex flex-column align-items-center">
-            <h5 className="rubrik">{leagueName}</h5>
+            <p className="rubrik">{leagueName}</p>
             {logos.map((team, index) => (
               <div key={team.id} className="logo-list text-center">
                 <img
@@ -76,7 +76,7 @@ function League({ leagueName }) {
           </div>
         </div>
         <div className="event-container col-8 text-center">
-          <h2>{selectedTeamName} Matcher:</h2>
+          <p className="lagMatcher">{selectedTeamName} Matcher:</p>
           <div className="row">
             {filteredEvents.map((event) => (
               <MatchBox key={event.id} event={event} />
