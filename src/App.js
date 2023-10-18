@@ -13,7 +13,7 @@ function App() {
   const SHL = "SHL";
 
   return (
-    <>
+    <div className="ree">
       <Router>
         <Navigation />
         <Routes>
@@ -38,7 +38,7 @@ function App() {
         </Routes>
         <Foooter />
       </Router>
-    </>
+    </div>
   );
 }
 
