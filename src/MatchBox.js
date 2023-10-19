@@ -1,7 +1,5 @@
 import React from "react";
 import "./matchBox.css";
-import gala from "./gala.png";
-import united from "./united.png";
 
 function MatchBox({ event }) {
   // Convert the "startDate" to a JavaScript Date object

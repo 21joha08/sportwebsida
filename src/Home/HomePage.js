@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import sportfusion from "./sportfusion.png";
 import MatchBox from "../MatchBox";
 import useFetch from "../Service/LeagueAPI.js";
 import Slideshow from "../Slideshow/Slideshow";
