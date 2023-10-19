@@ -28,7 +28,7 @@ function Foooter() {
           <Col lg={4} md={12}>
             <h5>Contact Us</h5>
             <address>
-              Address: Ree Vägen 12, Gävle, Sverige
+              Address: Väg 12, Gävle, Sverige
               <br />
               Phone: +46 7611211212
               <br />

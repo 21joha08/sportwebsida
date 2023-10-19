@@ -10,7 +10,8 @@ function League({ leagueName }) {
     Superettan: "119513",
     Damallsvenskan: "123935",
     Superligan: "121413",
-    SHL: "108487",
+    SHL: "125472",
+    SDHL: "125554",
   };
 
   const leagueId = leagueIds[leagueName];

@@ -11,34 +11,34 @@ function App() {
   const Damallsvenskan = "Damallsvenskan";
   const Superligan = "Superligan";
   const SHL = "SHL";
+  const SDHL = "SDHL";
 
   return (
-    <div className="ree">
-      <Router>
-        <Navigation />
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route
-            path="/AllSvenskan"
-            element={<League leagueName={allSvenskan} />}
-          />
-          <Route
-            path="/Superettan"
-            element={<League leagueName={Superettan} />}
-          />
-          <Route
-            path="/Damallsvenskan"
-            element={<League leagueName={Damallsvenskan} />}
-          />
-          <Route
-            path="/Superligan"
-            element={<League leagueName={Superligan} />}
-          />
-          <Route path="/SHL" element={<League leagueName={SHL} />} />
-        </Routes>
-        <Foooter />
-      </Router>
-    </div>
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route
+          path="/AllSvenskan"
+          element={<League leagueName={allSvenskan} />}
+        />
+        <Route
+          path="/Superettan"
+          element={<League leagueName={Superettan} />}
+        />
+        <Route
+          path="/Damallsvenskan"
+          element={<League leagueName={Damallsvenskan} />}
+        />
+        <Route
+          path="/Superligan"
+          element={<League leagueName={Superligan} />}
+        />
+        <Route path="/SHL" element={<League leagueName={SHL} />} />
+        <Route path="/SDHL" element={<League leagueName={SDHL} />} />
+      </Routes>
+      <Foooter />
+    </Router>
   );
 }
 

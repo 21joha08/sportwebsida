@@ -79,6 +79,14 @@ function Navigation() {
               >
                 SHL
               </NavDropdown.Item>
+              <NavDropdown.Item
+                className="navtext drop"
+                as={Link}
+                to="/sdhl"
+                onClick={closeMenu}
+              >
+                SDHL
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
