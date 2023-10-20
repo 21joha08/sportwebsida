@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./slideShow.css";
-import fotbollSlide from "./fotbollSlide.jpeg";
-import hockeySlide from "./hockeySlide.jpeg";
-import innebandySlide from "./innebandySlide.jpeg";
+import fotbollSlide from "./fotbollSlide.png";
+import hockeySlide from "./ishockeySlide.png";
+import innebandySlide from "./innebandySlide.png";
 
 function Slideshow() {
   const [activeIndex, setActiveIndex] = useState(0);

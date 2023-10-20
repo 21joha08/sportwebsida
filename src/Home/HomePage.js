@@ -39,12 +39,10 @@ function HomePage() {
           <h4>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
             varius scelerisque nisi. Nam molestie purus non pharetra ultrices.
-            Maecenas sit amet molestie lacus, ac scelerisque ipsum. Nam
-            tincidunt, sem in accumsan volutpat, nisi massa molestie dolor, sed
-            efficitur velit massa sagittis ex. Orci varius natoque penatibus et
-            magnis dis parturient.
+            Maecenas sit amet molestie lacus, ac scelerisque ipsum.
           </h4>
         </div>
+
         <div className="event-container col-8 text-center">
           <h3 className="mt-5">Senaste matcherna:</h3>
           <div className="row">

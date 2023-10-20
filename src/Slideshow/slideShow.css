@@ -5,6 +5,7 @@
 #carousel {
   margin-top: 56px;
   margin-bottom: 2vw;
+  max-width: 1000px;
 }
 
 /* slideShow.css */
