@@ -52,7 +52,7 @@ function League({ leagueName }) {
       )
     : events;
 
-  // Use useEffect to reset selectedTeamId when leagueId changes or component mounts
+  // Use useEffect to reset selectedTeamId when leagueId changes
   useEffect(() => {
     setSelectedTeamId(null);
     setSelectedTeamName(null);

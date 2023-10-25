@@ -4,7 +4,6 @@ import "./matchBox.css";
 function MatchBox({ event }) {
   // Convert the "startDate" to a JavaScript Date object
   const startDate = new Date(event.startDate);
-  // Format the date as desired (you can use a library like moment.js for more advanced formatting)
   const formattedDate =
     startDate.toLocaleDateString() + " " + startDate.toLocaleTimeString();
 

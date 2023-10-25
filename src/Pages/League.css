@@ -1,16 +1,13 @@
 .logo-list {
-  margin-bottom: 5px; /* Reduce the margin for .logo-list */
+  margin-bottom: 5px; 
 }
 
 .image-container {
-  margin: 2px; /* Adjust the margin-top for image-container */
+  margin: 2px; 
 }
 
 #logga {
   width: 55px;
-}
-
-.events-container {
 }
 
 #logga:hover {
