@@ -2,6 +2,7 @@ import "./App.css";
 import Navigation from "./Navigation";
 import HomePage from "./Home/HomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter } from 'react-router-dom';
 import League from "./Pages/League";
 import Foooter from "./navigation/Foooter";
 
@@ -14,7 +15,7 @@ function App() {
   const SDHL = "SDHL";
 
   return (
-    <Router>
+    <HashRouter>
       <Navigation />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
@@ -38,7 +39,7 @@ function App() {
         <Route path="/SDHL" element={<League leagueName={SDHL} />} />
       </Routes>
       <Foooter />
-    </Router>
+    </HashRouter>
   );
 }
 
