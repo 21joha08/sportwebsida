@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.1fbc0ecf.css",
-    "main.js": "/static/js/main.633bcf6d.js",
+    "main.js": "/static/js/main.de4be93c.js",
     "static/js/787.6f484c02.chunk.js": "/static/js/787.6f484c02.chunk.js",
     "static/media/innebandySlide.png": "/static/media/innebandySlide.07481972a275bc4ebe4e.png",
     "static/media/ishockeySlide.png": "/static/media/ishockeySlide.4aaea02a680d6328684c.png",
     "static/media/fotbollSlide.png": "/static/media/fotbollSlide.51dc4dba23fadfaa0b94.png",
     "index.html": "/index.html",
     "main.1fbc0ecf.css.map": "/static/css/main.1fbc0ecf.css.map",
-    "main.633bcf6d.js.map": "/static/js/main.633bcf6d.js.map",
+    "main.de4be93c.js.map": "/static/js/main.de4be93c.js.map",
     "787.6f484c02.chunk.js.map": "/static/js/787.6f484c02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1fbc0ecf.css",
-    "static/js/main.633bcf6d.js"
+    "static/js/main.de4be93c.js"
   ]
 }
