@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1fbc0ecf.css",
-    "main.js": "/static/js/main.de4be93c.js",
-    "static/js/787.6f484c02.chunk.js": "/static/js/787.6f484c02.chunk.js",
-    "static/media/innebandySlide.png": "/static/media/innebandySlide.07481972a275bc4ebe4e.png",
-    "static/media/ishockeySlide.png": "/static/media/ishockeySlide.4aaea02a680d6328684c.png",
-    "static/media/fotbollSlide.png": "/static/media/fotbollSlide.51dc4dba23fadfaa0b94.png",
-    "index.html": "/index.html",
-    "main.1fbc0ecf.css.map": "/static/css/main.1fbc0ecf.css.map",
-    "main.de4be93c.js.map": "/static/js/main.de4be93c.js.map",
-    "787.6f484c02.chunk.js.map": "/static/js/787.6f484c02.chunk.js.map"
+    "main.css": "/sportwebsida/static/css/main.1fbc0ecf.css",
+    "main.js": "/sportwebsida/static/js/main.81dca470.js",
+    "static/js/787.6f484c02.chunk.js": "/sportwebsida/static/js/787.6f484c02.chunk.js",
+    "static/media/innebandySlide.png": "/sportwebsida/static/media/innebandySlide.07481972a275bc4ebe4e.png",
+    "static/media/ishockeySlide.png": "/sportwebsida/static/media/ishockeySlide.4aaea02a680d6328684c.png",
+    "static/media/fotbollSlide.png": "/sportwebsida/static/media/fotbollSlide.51dc4dba23fadfaa0b94.png",
+    "index.html": "/sportwebsida/index.html",
+    "main.1fbc0ecf.css.map": "/sportwebsida/static/css/main.1fbc0ecf.css.map",
+    "main.81dca470.js.map": "/sportwebsida/static/js/main.81dca470.js.map",
+    "787.6f484c02.chunk.js.map": "/sportwebsida/static/js/787.6f484c02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1fbc0ecf.css",
-    "static/js/main.de4be93c.js"
+    "static/js/main.81dca470.js"
   ]
 }
